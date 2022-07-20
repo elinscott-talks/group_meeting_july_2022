@@ -1,0 +1,30 @@
+elinscott@theospc8:~/code/$ cookiecutter https://github.com/audreyfeldroy/cookiecutter-pypackage.git
+full_name [Audrey Roy Greenfeld]: Edward Linscott
+email [audreyr@example.com]: edwardlinscott@gmail.com
+github_username [audreyr]: elinscott
+project_name [Python Boilerplate]: autoibrav
+project_slug [autoibrav]: 
+project_short_description [Python Boilerplate contains all the boilerplate you need to create a Python package.]: A simple package that automates the generation of ibrav and other Quantum ESPRESSO keywords for a given cell
+pypi_username [elinscott]: 
+version [0.1.0]: 0.0.1
+use_pytest [n]: y
+use_black [n]: y
+use_pypi_deployment_with_travis [y]: n
+add_pyup_badge [n]: n
+Select command_line_interface:
+1 - Click
+2 - Argparse
+3 - No command-line interface
+Choose from 1, 2, 3 [1]: 3
+create_author_file [y]: y
+Select open_source_license:
+1 - MIT license
+2 - BSD license
+3 - ISC license
+4 - Apache Software License 2.0
+5 - GNU General Public License v3
+6 - Not open source
+Choose from 1, 2, 3, 4, 5, 6 [1]: 1
+elinscott@theospc8:~/code$ cd autoibrav/
+elinscott@theospc8:~/code/autoibrav$ ls
+AUTHORS.rst  autoibrav  CONTRIBUTING.rst  docs  HISTORY.rst  LICENSE  Makefile  MANIFEST.in  README.rst  requirements_dev.txt  setup.cfg  setup.py  tests  tox.ini
