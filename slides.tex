@@ -331,17 +331,22 @@
 \newlength{\myyshift}
 \setlength{\myyshift}{0.05cm}
 
-\begin{frame}{Strong songs and Sticky Notes}
+\begin{frame}{Part 1: Mahler Symphony No. 9}
+  \begin{center}
+    \url{https://www.youtube.com/watch?v=tkChdHBuoiQ&t=3237s}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Part 2: Sticky Notes and Strong Songs}
   \begin{center}
     \renewcommand{\arraystretch}{2}
     \footnotesize
     \begin{tabular}[t]{ll}
-      \onslide<1->{\includegraphics[height=0.5\paperheight]{podcasts/strong_songs.jpg}} &
-      \onslide<2->{\includegraphics[height=0.5\paperheight]{podcasts/sticky_notes.jpg}}                                                             \\
-      Muse: New Born and Micro Cuts                                                     & Mahler: Symphony No. 9? / La Mer? / Ysaye violin sonatas?
+      \onslide<1->{\includegraphics[height=0.5\paperheight]{podcasts/sticky_notes.jpg}} &
+      \onslide<3->{\includegraphics[height=0.5\paperheight]{podcasts/strong_songs.jpg}}   \\
+      \onslide<2->{Created by the previous director of l'OCL!}
     \end{tabular}
   \end{center}
-
 \end{frame}
 
 \begin{frame}{Leaving the group}
@@ -419,7 +424,7 @@
   Show autodoc-generated docs
 \end{frame}
 
-\begin{frame}{Testing with pytest}
+\begin{frame}{Documentation}
   See the examples in \texttt{autoibrav/docs/modules.rst}
 \end{frame}
 
@@ -458,9 +463,9 @@
   A few notes:
 
   \begin{itemize}
-    \item tiny, self-contained tests are best! (cf. QE)
-    \item pure functions/functional programming
-    \item there are a few things about \texttt{pytest} that are a bit ``smelly''
+    \item unit vs integration tests (e.g. QE)
+    \item pure functions and functional programming
+    \item there are a few things about \texttt{pytest} that are a bit ``smelly'' (magic fixture injection, test function discovery, parameterization syntax, ...)
   \end{itemize}
 
 
@@ -469,7 +474,7 @@
 \begin{frame}{Summary}
   \begin{itemize}
     \item Don't know where to start? Use a cookiecutter
-    \item For python projects...
+    \item For python\footnote{There is autodocs and pytest support for other languages, but I haven't tried them...} projects...
           \begin{itemize}
             \item docstrings + \texttt{autodocs} for nice documentation
             \item use \texttt{pytest} to test the code
